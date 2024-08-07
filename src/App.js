@@ -5,6 +5,7 @@ import './Responsive.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
+import { Footer } from './container';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Homepage/>} exact />
         </Routes>
+        <Footer/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import React from 'react';
 
 import {
     Header,
-    // About,
+    About,
     // Brands,
     // Stats,
     // Portfolio,
@@ -18,7 +18,7 @@ import {
     Stats,
     // Footer
 } from '../container';
-import About from '../container/About/About';
+// import About from '../container/About/About';
 
 // import {Navbar} from '../components'
 
