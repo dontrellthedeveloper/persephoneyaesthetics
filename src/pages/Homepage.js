@@ -14,9 +14,10 @@ import {
     // Media,
     // Team,
     // AddServices,
-    // Statement,
+    Statement,
     // Footer
 } from '../container';
+
 // import {Navbar} from '../components'
 
 const Homepage = () => {
@@ -34,7 +35,7 @@ const Homepage = () => {
 
             {/*<About/>*/}
 
-            {/*<Statement/>*/}
+            <Statement/>
             {/*<Media/>*/}
             {/*<Team/>*/}
             {/*<AddServices/>*/}

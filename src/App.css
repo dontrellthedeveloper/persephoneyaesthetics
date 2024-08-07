@@ -23,6 +23,23 @@
 /* ================================================
 |   |   |   |   Html, Body
 ================================================ */
+/* *{
+  -ms-overflow-style: none;
+} */
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #272508;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #40a278;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #4ac390;  
+}
+
 #home {
   background: none;
   height: 100%;
@@ -845,7 +862,8 @@ ul.social-list .twitter-bg-color a:hover {
 }
 
 #statement .content-box-lg {
-  background: rgba(0,0,0,0.8);
+  /* background: rgba(0,0,0,0.8); */
+  background: rgba(255,255,255,0.8);
 }
 
 .tech-statement h3 {
