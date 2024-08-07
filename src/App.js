@@ -2,21 +2,22 @@ import './App.css';
 import './Responsive.css';
 
 // import {Header, About, Brands, Stats, Portfolio, Services, Media, Team, AddServices} from './container';
+import {Header} from './container';
 // import {Navbar} from './components'
 
 const App = () => {
   return (
     <div>
-        {/* <Navbar/>
+        {/* <Navbar/> */}
         <Header/>
-        <About/>
-        <Brands/>
-        <Stats/>
-        <Portfolio/>
-        <Services/>
-        <Media/>
-        <Team/>
-        <AddServices/> */}
+        {/* <About/> */}
+        {/* <Brands/> */}
+        {/* <Stats/> */}
+        {/* <Portfolio/> */}
+        {/* <Services/> */}
+        {/* <Media/> */}
+        {/* <Team/> */}
+        {/* <AddServices/> */}
     </div>
   );
 }
