@@ -15,8 +15,10 @@ import {
     // Team,
     // AddServices,
     Statement,
+    Stats,
     // Footer
 } from '../container';
+import About from '../container/About/About';
 
 // import {Navbar} from '../components'
 
@@ -27,15 +29,19 @@ const Homepage = () => {
         <>
             {/*<Navbar/>*/}
             <Header/>
-            {/* <Portfolio/>
-            <Brands/>
-            <Stats/>
 
-            <Services/> */}
+            {/* <Portfolio/> */}
 
-            {/*<About/>*/}
+            {/* <Brands/> */}
 
+
+
+            {/* <Services/> */}
             <Statement/>
+            <About/>
+
+
+            <Stats/>
             {/*<Media/>*/}
             {/*<Team/>*/}
             {/*<AddServices/>*/}
