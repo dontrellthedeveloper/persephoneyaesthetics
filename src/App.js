@@ -2,22 +2,17 @@ import './App.css';
 import './Responsive.css';
 
 // import {Header, About, Brands, Stats, Portfolio, Services, Media, Team, AddServices} from './container';
-import {Header} from './container';
-// import {Navbar} from './components'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+import Homepage from "./pages/Homepage";
+
 
 const App = () => {
   return (
     <div>
-        {/* <Navbar/> */}
-        <Header/>
-        {/* <About/> */}
-        {/* <Brands/> */}
-        {/* <Stats/> */}
-        {/* <Portfolio/> */}
-        {/* <Services/> */}
-        {/* <Media/> */}
-        {/* <Team/> */}
-        {/* <AddServices/> */}
+        <Routes>
+          <Route path='/' element={<Homepage/>} exact />
+        </Routes>
     </div>
   );
 }

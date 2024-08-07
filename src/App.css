@@ -4,6 +4,14 @@
     Fonts: Raleway & Open Sans
     -----------------------------------------------
     Colors:
+        Light Green:        #40a278
+        Really Light Green: #4ac390
+        Dark Green:         #205840
+        Tan:                #d4c792
+        Dark Tan:           #78713d
+        Bronse:             #9c6c29
+        Dark Gold:          #3e3a0c
+
         Red:                #FF0000
         Dark Grey:          #454545
         Grey:               #A1A0A1
@@ -223,6 +231,11 @@ section {
 .btn-home {
   color: #dcdcdc;
   border: 1px solid #dcdcdc;
+
+  color: #3e3a0c;
+  font-weight: 888;
+  background-color: #40a278;
+  border: 1px solid #3e3a0c;
 }
 
 .btn-home:hover,
@@ -230,6 +243,10 @@ section {
   color: #dcdcdc;
   background-color: #cd0000;
   border: 1px solid #cd0000;
+
+  color: #dcdcdc;
+    background-color: #3e3a0c;
+    border: 1px solid #9c6c29;
 }
 
 .btn-red {
