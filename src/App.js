@@ -6,11 +6,14 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Homepage from "./pages/Homepage";
 import { Footer } from './container';
+import Navbar from './components/Navbar/Navbar';
+
 
 
 const App = () => {
   return (
     <div>
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Homepage/>} exact />
         </Routes>
