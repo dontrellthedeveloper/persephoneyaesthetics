@@ -3,47 +3,16 @@ import './About.scss';
 import {images} from "../../constants";
 import {AiOutlineLineChart} from "react-icons/ai";
 import {FaRegEye, FaRegHandshake} from "react-icons/fa";
+import { IoIosArrowDown } from 'react-icons/io';
 
 const About = () => {
     return (
+        <>
+
+
         <section id="about">
 
-            {/* About 01 */}
-            <div className="about-01">
-                <div className="content-box-main">
-                    <div className="container">
-                        <div className="row">
-
-                            {/* About Left Side */}
-
-                            <div className="col-md-4 col-sm-4">
-                                <div className="vertical-heading">
-                                    <h5>Who We Are</h5>
-                                    <h2>A <strong>Story</strong><br/>About Us</h2>
-                                </div>
-
-                            </div>
-                            {/* About Right Side */}
-
-                            <div className="col-md-8 col-sm-8">
-                                <div className="about-right">
-                                    <p className="about-text">Having a strong real estate background and a daughter in the industry prepared and opened me up to the endless possibilities social media has to offer.  Every one in the world is unique, however some have an influence that can make profound changes in all aspects of the world.  These unique individuals are called <span className="about-text-bold">INFLUENCERS!</span> Influencers ARE Brands. </p>
-                                    <p className="about-text">My team specializes in bringing brands together for Business Deals! We make sure everybody wins.  Influencer Brands reach and impact more consumers than traditional advertising does.  Merchants, Vendors and Service Providers save millions on marketing and advertising by using influencers to market their products.  Remember, if its not a win/win, it wasn't successful! We make sure Success Happens!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* About Bottom */}
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="about-bottom">
-                                    <img src={images.aboutLeft} alt="About Us" className="img-responsive"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
             {/* About 02 */}
             <div className="about-02">
@@ -79,6 +48,200 @@ const About = () => {
                 </div>
             </div>
         </section>
+        
+<section id="history" style={{height: 'calc(100vh - 140px)', display: 'table', width: '100%'}}>
+                <div className="about-01" style={{display: 'table-cell', verticalAlign: 'middle'}}>
+                    <div className="container">
+                    <div className="row col-mobile-top" style={{justifyContent: 'center'}}>
+                            {/* Left Side */}
+                            {/* <div className="col-md-6 col-sm-6">
+                                <div className="mobile__hide-image column-show map-color-7 influencer-image">
+                                    <div className="portfolio-item">
+
+                                    <img src={urlFor(history.imageUrl).width(800).height(800).url()} className="influencer-image-2" alt=""/>
+                                        <div className="portfolio-item-overlay margin-top-g">
+                                            <div className="portfolio-item-details text-center">
+
+                                                <div className='show-button'>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> */}
+                            
+                            {/* Right Side */}
+                            <div className="col-md-6 col-sm-12" style={{display: 'table'}}>
+                                <div className="about-right" style={{display: 'table-cell'}}>
+                                    <div className="horizontal-heading main-about" style={{color: '#000'}}>
+                                        <h5 style={{color: '#000', fontWeight: '700',}}>
+                                        {/* {history.preheading} */}
+                                        preheading
+                                        </h5>
+                                        <h2> <strong ></strong>
+                                        {/* {history.heading} */}
+                                        heading
+                                        </h2>
+                                    </div>
+
+                                    <hr style={{margin: '2rem', border: '2px solid #213805'}}/>
+
+
+
+                                    <p className="about-text" style={{fontWeight: '700', textAlign: 'left', marginLeft: '60px', marginRight: '60px'}}>
+                                    {/* <ReactMarkdown 
+                                                children={history.description} 
+                                                remarkPlugins={[remarkGfm]}   
+                                                /> */}
+                    
+                                        testing text
+                                    </p>
+
+
+                                    <hr style={{margin: '1.5rem', border: '2px solid #213805'}}/>
+
+                                </div>
+                            </div>
+
+                            <div className="col-md-6 col-sm-12" style={{display: 'table'}}>
+                                <div className="about-right" style={{display: 'table-cell'}}>
+                                    <div className="horizontal-heading main-about" style={{color: '#000'}}>
+                                        <h5 style={{color: '#000',fontWeight: '700',}}>
+                                        {/* {history.preheading2} */}
+                                        preheading
+                                        </h5>
+                                        <h2> <strong ></strong>
+                                        {/* {history.heading2} */}
+                                        heading
+                                        </h2>
+                                    </div>
+
+                                    <hr style={{margin: '2rem', border: '2px solid #213805'}}/>
+
+                                    <p className="about-text" style={{fontWeight: '700',textAlign: 'left', marginLeft: '60px', marginRight: '60px'}}>
+                                    {/* <ReactMarkdown 
+                                                children={history.description2} 
+                                                remarkPlugins={[remarkGfm]}   
+                                                />       */}
+                                                testing text      
+                                    </p>
+
+                                    
+                                    
+
+                                    <hr style={{margin: '1.5rem', border: '2px solid #213805'}}/>
+                                                                        
+                                                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                            {/*  Arrow Down */}
+                {/* <a href="#about2" className="arrow-down smooth-scroll" style={{color: '#213805'}}>
+                    <IoIosArrowDown icon="fa-solid fa-angle-down" />
+                </a> */}
+            </section>
+
+
+            <section id="about" style={{height: 'calc(100vh - 140px)', display: 'table', width: '100%'}}>
+                <div className="about-01" style={{display: 'table-cell', verticalAlign: 'middle'}}>
+                    <div className="container">
+                    <div className="row col-mobile-top" style={{justifyContent: 'center'}}>
+                            {/* Left Side */}
+                            <div className="col-md-6 col-sm-6">
+                                <div className="mobile__hide-image column-show map-color-7 influencer-image">
+                                    <div className="portfolio-item">
+                                        <img 
+                                        // src={urlFor(extras.imageUrl).width(800).height(800).url()} 
+                                        src={images.logo2}
+                                        className="influencer-image-2" alt=""/>
+                                        <div className="portfolio-item-overlay margin-top-g">
+                                            <div className="portfolio-item-details text-center">
+
+
+                                                <div className='show-button'>
+                                                    {/* {extras.gameLink && (
+                                                        <a href={extras.gameLink} target='_blank'>
+                                                            <button className='btn btn-social-influencer-img btn-social-img btn-social-instagram'>
+                                                                <AiOutlineStock/>
+                                                            </button>
+                                                        </a>
+                                                    )} */}
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            
+                            {/* Right Side */}
+                            <div className="col-md-6 col-sm-12 col-mobile" style={{display: 'table'}}>
+                                <div className="about-right" style={{display: 'table-cell', verticalAlign: 'middle'}}>
+                                    <div className="horizontal-heading main-about" style={{color: '#000'}}>
+                                        <h5 style={{color: '#000'}}>
+                                        {/* {extras.preheading} */}
+                                        preheading
+                                        </h5>
+                                        <h2> <strong ></strong>
+                                        {/* {extras.heading} */}
+                                        heading
+                                        </h2>
+                                    </div>
+
+                                    <hr style={{margin: '2rem', border: '2px solid #213805'}}/>
+
+                                    <p className="about-text" style={{marginLeft: '80px', marginRight: '80px'}}>
+                                
+                                    {/* <ReactMarkdown 
+                                                children= {extras.description}  
+                                                remarkPlugins={[remarkGfm]}   
+                                                /> */}
+                                                text example
+                                    </p>
+
+                                    
+
+                                    <div className='show-button-page'>
+
+                                        <hr style={{margin: '1rem'}}/>
+                                    
+                                        <div class="basic-card basic-card-aqua " style={{margin: '0 auto'}}>
+                                        <div class="card-link-b" style={{padding: '7px', borderTop: '0', }}>
+                                            <a 
+                                            // href={extras.gameLink} 
+                                            href=""
+                                            target='_blank' title="Play the Stock Market Game" style={{backgroundColor: 'none'}}><span>
+                                            {/* {extras.gameText} */}
+                                            </span></a>
+                                        </div>
+                                    </div>
+
+                                        <hr style={{margin: '1rem'}}/>
+
+                                    </div>
+                                                               
+                                                                        
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                            {/*  Arrow Down */}
+                <a href="#about" className="arrow-down smooth-scroll" style={{color: '#213805'}}>
+                    <IoIosArrowDown icon="fa-solid fa-angle-down" />
+                </a>
+            </section>
+
+            </>
     );
 };
 
