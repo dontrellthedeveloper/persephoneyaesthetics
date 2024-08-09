@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/Navbar';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
+import Membership from './pages/Membership';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/about' element={<AboutUs/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/faq' element={<FAQ/>} />
+          <Route path='/membership' element={<Membership/>} />
         </Routes>
         <Footer/>
     </div>

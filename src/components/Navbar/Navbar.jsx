@@ -62,7 +62,7 @@ const Navbar = () => {
                 ? "navbar__links-styles-scroll navbar__links-color-scroll"
                 : "navbar__links-styles-scroll navbar__links-color-scroll"
             }
-            to="/updates"
+            to="/membership"
           >
             Membership
           </NavLink>

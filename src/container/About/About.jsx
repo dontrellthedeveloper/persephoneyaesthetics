@@ -27,7 +27,7 @@ const About = () => {
                     <div className="container">
 
                     <div style={{maxWidth: '700px', margin: '0 auto', textAlign: 'center'}}>
-                    <h1 className='styled-heading'>Book Our Services</h1>
+                    <h1 className='styled-heading'>Our Services</h1>
                     <hr className='styled-divider'/>
                     </div>
 
