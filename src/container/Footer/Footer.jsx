@@ -85,7 +85,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row" style={{justifyContent: 'center'}}>
 
-                            <div className="horizontal-heading contact-main-form-h" style={{marginBottom: '50px'}}>
+                            <div className="horizontal-heading contact-main-form-h" style={{marginBottom: '30px'}}>
                                 <h5>
                                 {/* {footer.footerPreheading} */}
                                 Connect &
@@ -108,59 +108,74 @@ const Footer = () => {
 
 
 
-                                        <p className="form-p-c">
-                                        {/* {social.linkedLink && (
-                                            <a href={social.linkedLink} target='_blank'>
+                                        <p className="form-p-c" style={{marginTop: '20px'}}>
+                                        {/* {social.linkedLink && ( */}
+                                            <a 
+                                            // href={social.linkedLink} 
+                                            href=''
+                                            target='_blank'>
                                                 <button className='btn btn-social-i btn-linkedIn'>
                                                     <FaLinkedin/>
                                                 </button>
                                             </a>
-                                        )}
+                                        {/* )} */}
 
 
-                                        {social.facebookLink && (
-                                            <a href={social.facebookLink} target='_blank'>
-                                                <button className='btn btn-social-i-f btn-facebook'>
+                                        {/* {social.facebookLink && ( */}
+                                            <a 
+                                            // href={social.facebookLink} 
+                                            href=''
+                                            target='_blank'>
+                                                <button className='btn btn-social-i-f2 btn-facebook2'>
                                                     <FaFacebookF/>
                                                 </button>
                                             </a>
-                                        )}
+                                        {/* )} */}
 
-                                        {social.instagramLink && (
-                                            <a href={social.instagramLink} target='_blank'>
-                                                <button className='btn btn-social-i btn-instagram'>
+                                        {/* {social.instagramLink && ( */}
+                                            <a 
+                                            // href={social.instagramLink} 
+                                             href=''
+                                            target='_blank'>
+                                                <button className='btn btn-social-i btn-instagram2'>
                                                     <FaInstagram/>
                                                 </button>
                                             </a>
-                                        )}
+                                        {/* )} */}
 
-                                        {social.tiktokLink && (
-                                            <a href={social.tiktokLink}
+                                         {/* {social.tiktokLink && ( */}
+                                            <a 
+                                            // href={social.tiktokLink}
+                                            href=''
                                             target='_blank'>
-                                                <button className='btn btn-social-i btn-tiktok'>
+                                                <button className='btn btn-social-i btn-tiktok2'>
                                                     <FaTiktok/>
                                                 </button>
                                             </a>
-                                        )}
+                                        {/* )}  */}
 
 
-                                        {social.youTubeLink && (
-                                            <a href={social.youTubeLink}
+                                        {/* {social.youTubeLink && ( */}
+                                            <a 
+                                            // href={social.youTubeLink}
+                                            href=''
                                             target='_blank'>
-                                                <button className='btn btn-social-i-y btn-youtube'>
+                                                <button className='btn btn-social-i-y btn-youtube2'>
                                                     <FaYoutube/>
                                                 </button>
                                             </a>
-                                        )}
+                                        {/* )} */}
 
-                                        {social.googlePlus && (
-                                            <a href={social.googlePlus}
+                                         {/* {social.googlePlus && ( */}
+                                            <a 
+                                              href=''
+                                            // href={social.googlePlus}
                                             target='_blank'>
-                                                <button className='btn btn-social-i-y btn-google'>
+                                                <button className='btn btn-social-i-y btn-google2'>
                                                     <FaGooglePlus/>
                                                 </button>
                                             </a>
-                                        )} */}
+                                        {/* )}  */}
                                         </p>
                                     <form action="https://formspree.io/f/myyqvabe" method="POST">
                                             <div className="row">
@@ -210,8 +225,8 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <p className="my-auto marg-top">
-                                {/* Copyright &copy; 2023 All Rights Reserved By <span>OUR STOCK IS RISING.</span> */}
+                            <p className="my-auto marg-top" style={{fontWeight: '700'}}>
+                                Copyright &copy; 2024 All Rights Reserved By <span style={{fontWeight: '700'}}>PERSEPHONEYAESTHETICS.</span>
                                             {/* {footer.footerCopyriight} */}
                             </p>
                         </div>

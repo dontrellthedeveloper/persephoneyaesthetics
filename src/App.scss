@@ -74,6 +74,21 @@ section {
   overflow: hidden;
 }
 
+
+
+
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #9c6c29;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(156, 108, 41,.25);
+}
+
+
+
+
 /* ================================================
 |   |   |   |   Preloader
 ================================================ */
@@ -219,6 +234,17 @@ section {
   transition: all .5s;
 }
 
+.btn-social-i-f2 {
+  font-family: 'raleway', sans-serif;
+  border-radius: 28px;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 15px;
+  padding: 6px 12px 6px 12px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .btn-social-i-t {
   font-family: 'raleway', sans-serif;
   border-radius: 28px;
@@ -279,6 +305,101 @@ section {
   background-color: #a1a0a1;
   border: 1px solid #454545;
 }
+
+
+
+
+.btn-linkedIn {
+  background: #fff;
+  border: 2px solid #dbc7ab;
+  color: #dbc7ab;
+}
+
+.btn-linkedIn:focus, .btn-linkedIn:hover {
+  background: #0072b1;
+  border: 2px solid #dbc7ab;
+  color: #fff;
+}
+
+.btn-facebook2 {
+  background: #fff;
+  border: 2px solid #dbc7ab;
+  color: #dbc7ab;
+}
+
+.btn-facebook2:focus, .btn-facebook2:hover {
+  background: #3b5998;
+  border: 2px solid #dbc7ab;
+  color: #fff;
+}
+
+
+.btn-instagram2 {
+  background: #fff;
+  border: 2px solid #dbc7ab;
+  color: #dbc7ab;
+}
+
+.btn-instagram2:focus, .btn-instagram2:hover {
+background:
+
+          radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+          radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+
+          radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+          radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+
+          radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+          radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+
+          radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+          linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  border: 2px solid #dbc7ab;
+  color: #fff;
+}
+
+
+
+.btn-tiktok2 {
+  background: #fff;
+  border: 2px solid #dbc7ab;
+  color: #dbc7ab;
+}
+
+.btn-tiktok2:focus, .btn-tiktok2:hover {
+  background: #ff0050;
+  border: 2px solid #dbc7ab;
+  color: #fff;
+}
+
+.btn-youtube2 {
+  background: #fff;
+  border: 2px solid #dbc7ab;
+  color: #dbc7ab;
+}
+
+.btn-youtube2:focus, .btn-youtube2:hover {
+  background: #FF0000;
+  border: 2px solid #dbc7ab;
+  color: #fff;
+}
+
+
+.btn-google2 {
+  background: #fff;
+  border: 2px solid #dbc7ab;
+  color: #dbc7ab;
+}
+
+.btn-google2:focus, .btn-google2:hover {
+  background: #db4a39;
+  border: 2px solid #dbc7ab;
+  color: #fff;
+}
+
+
+
 
 .btn-instagram {
   color: white;
@@ -443,7 +564,7 @@ section {
 }
 
 .content-box-contact {
-  padding: 60px 0;
+  padding: 40px 0 60px 0;
 }
 
 /* ================================================
@@ -1488,7 +1609,7 @@ ul.social-list .twitter-bg-color a:hover {
 /* Contact Left */
 .form-styles-c {
   background-color: #f8f4f4;;
-  border: 2px solid #9c6c29;
+  border: 2px solid #dbc7ab;
 }
 
 .line-br-color {
@@ -1512,7 +1633,7 @@ ul.social-list .twitter-bg-color a:hover {
 }
 
 .form-control {
-  border: 1px solid #000;
+  border: 2px solid #dbc7ab;
 }
 
 .office {
@@ -1650,8 +1771,9 @@ ul.office-details li i {
 |   |   |   |   Footer
 ================================================ */
 footer {
-  background: #dcdcdc;
+  background: #f8f4f4;
   padding: 20px;
+  border-top: 2px solid #dbc7ab;
 }
 
 footer p {
@@ -1661,7 +1783,7 @@ footer p {
 
 footer p span {
   font-weight: bold;
-  color: #454545;
+  color: #368362;
 }
 
 .marg-top {

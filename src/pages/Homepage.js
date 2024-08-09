@@ -44,9 +44,9 @@ const Homepage = () => {
             <TextMedia/>
 
             <About/>
-            
-            <TextMedia2/>
             <Stats/>
+            <TextMedia2/>
+ 
             <Statement2/>
         
             {/*<Media/>*/}
