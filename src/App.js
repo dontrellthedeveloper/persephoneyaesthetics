@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import './Responsive.css';
 
 // import {Header, About, Brands, Stats, Portfolio, Services, Media, Team, AddServices} from './container';
