@@ -11,6 +11,7 @@ import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Membership from './pages/Membership';
+import Gallery from './pages/Gallery';
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/faq' element={<FAQ/>} />
           <Route path='/membership' element={<Membership/>} />
+          <Route path='/gallery' element={<Gallery/>} />
         </Routes>
         <Footer/>
     </div>

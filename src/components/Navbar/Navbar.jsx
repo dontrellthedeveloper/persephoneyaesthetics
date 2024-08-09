@@ -89,7 +89,7 @@ const Navbar = () => {
                 ? "navbar__links-styles-scroll navbar__links-color-scroll"
                 : "navbar__links-styles-scroll navbar__links-color-scroll"
             }
-            to="/history"
+            to="/gallery"
           >
             Gallery
           </NavLink>
@@ -123,16 +123,18 @@ const Navbar = () => {
         </li>
         <li className="app__flex p-text">
           <div />
-          <NavLink
+          <a
+          href='https://www.tebra.com/care/'
+          target='_blank'
             className={
               scroll
                 ? "navbar__links-styles-scroll navbar__links-color-scroll"
                 : "navbar__links-styles-scroll navbar__links-color-scroll"
             }
-            to="/about"
+            to=""
           >
             Book Now
-          </NavLink>
+          </a>
         </li>
         {/* <li className="app__flex p-text">
           <div />
