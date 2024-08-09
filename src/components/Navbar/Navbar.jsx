@@ -22,7 +22,7 @@ const Navbar = () => {
                 <img src={scroll ? images.logoDark : images.logoLight} alt="logo"/>
             </div>
             <ul className='app__navbar-links'>
-                {['home','Our Services', 'Membership','FAQ','Gallery','About Us','Contact','Book Now'].map((item)=> (
+                {['home','Our Services','Pricing' ,'Membership','FAQ','Gallery','About Us','Contact','Book Now'].map((item)=> (
                     <li className='app__flex p-text' key={`link-${item}`}>
                         <div/>
                         <a className={scroll ? 'navbar__links-color-scroll' : 'navbar__links-color'} href={`#${item}`}>{item}</a>

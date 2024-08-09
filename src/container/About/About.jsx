@@ -4,6 +4,7 @@ import {images} from "../../constants";
 import {AiOutlineLineChart} from "react-icons/ai";
 import {FaRegEye, FaRegHandshake} from "react-icons/fa";
 import { IoIosArrowDown } from 'react-icons/io';
+import { FaWeightScale } from "react-icons/fa6";
 
 const About = () => {
     return (
@@ -20,27 +21,54 @@ const About = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-4 col-sm-4">
+                                <div className="portfolio-item">
+                                    <img src={images.medical} className="influencer-image-2" alt=""/>
+                                    <div className="portfolio-item-overlay margin-top-g">
+
+                                    </div>
+                                </div>
                                 <div className="about-item text-center about-h">
-                                    <AiOutlineLineChart className="react-icon-about"></AiOutlineLineChart>
-                                    <h3>Mission</h3>
+                                    <FaWeightScale className="react-icon-about"></FaWeightScale>
+                                    <h3>Weight Loss</h3>
                                     <hr/>
-                                        <p>Create a partnership with brands that provide increased profits and long lasting business relationships. Brands grow and Influencers share in the success of branding.</p>
+                                    <p>Create a partnership with brands that provide increased profits and long lasting business relationships. Brands grow and Influencers share in the success of branding.</p>
+                                    <div className="home-btn">
+                                        <a className="btn btn-general btn-home smooth-scroll" href="#portfolio" title="Get Represented" role="button">Book Now</a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-4">
+                                <div className="portfolio-item">
+                                    <img src={images.medical} className="influencer-image-2" alt=""/>
+                                    <div className="portfolio-item-overlay margin-top-g">
+
+                                    </div>
+                                </div>
                                 <div className="about-item text-center about-h">
                                     <FaRegEye className="react-icon-about"></FaRegEye>
-                                    <h3>Vision</h3>
+                                    <h3>Botox</h3>
                                     <hr/>
                                         <p>We believe that Influencers are the key to successful business growth.  We pair elite influencers with brands that they love so that the experience is organic. </p>
+                                        <div className="home-btn">
+                                        <a className="btn btn-general btn-home smooth-scroll" href="#portfolio" title="Get Represented" role="button">Book Now</a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-4 col-sm-4">
+                                <div className="portfolio-item">
+                                    <img src={images.medical} className="influencer-image-2" alt=""/>
+                                    <div className="portfolio-item-overlay margin-top-g">
+
+                                    </div>
+                                </div>
                                 <div className="about-item text-center about-h">
                                     <FaRegHandshake className="react-icon-about"></FaRegHandshake>
-                                    <h3>Passion</h3>
+                                    <h3>Liquid Lipo</h3>
                                     <hr/>
                                         <p>Our passion is to make a difference and lead by example.  Brands can count on our team to deliver an organic product integration experience.</p>
+                                        <div className="home-btn">
+                                        <a className="btn btn-general btn-home smooth-scroll" href="#portfolio" title="Get Represented" role="button">Book Now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
