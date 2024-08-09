@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Membership from './pages/Membership';
 import Gallery from './pages/Gallery';
+import Services from './pages/Services';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/faq' element={<FAQ/>} />
           <Route path='/membership' element={<Membership/>} />
           <Route path='/gallery' element={<Gallery/>} />
+          <Route path='/services/:slug' element={<Services/>} />
         </Routes>
         <Footer/>
     </div>

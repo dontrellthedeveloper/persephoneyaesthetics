@@ -360,7 +360,7 @@ const Gallery = () => {
             <TextMedia/> */}
 
             {/* <About/> */}
-            <Stats/>
+            {/* <Stats/> */}
             {/* <TextMedia2/> */}
  
             <Statement2/>

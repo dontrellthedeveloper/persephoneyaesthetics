@@ -318,7 +318,7 @@ const Membership = () => {
             <TextMedia/> */}
 
             {/* <About/> */}
-            <Stats/>
+            {/* <Stats/> */}
             {/* <TextMedia2/> */}
  
             <Statement2/>

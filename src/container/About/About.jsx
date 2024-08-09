@@ -10,6 +10,7 @@ import { FaWeightScale } from "react-icons/fa6";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -48,6 +49,11 @@ const About = () => {
                             >
 
                             <div className="col-md-12 col-sm-12">
+                            <Link 
+                            // to={'/services/' + kid.slug.current}
+                            to={'/services/botox'}
+
+                                                >
                                 <div className="portfolio-item">
                                     <img src={images.medical} className="influencer-image-2" alt=""/>
                                     <div className="portfolio-item-overlay margin-top-g">
@@ -63,6 +69,7 @@ const About = () => {
                                         <a className="btn btn-general btn-home smooth-scroll" href="#portfolio" title="Get Represented" role="button">Book Now</a>
                                     </div>
                                 </div>
+                            </Link>
                             </div>
                             <div className="col-md-12 col-sm-12">
                                 <div className="portfolio-item">

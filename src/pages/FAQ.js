@@ -118,7 +118,7 @@ const FAQ = () => {
             <TextMedia/> */}
 
             {/* <About/> */}
-            <Stats/>
+            {/* <Stats/> */}
             {/* <TextMedia2/> */}
  
             <Statement2/>
