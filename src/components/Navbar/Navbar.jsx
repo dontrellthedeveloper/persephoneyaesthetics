@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {HiMenuAlt4, HiX} from "react-icons/hi";
 import {images} from "../../constants";
 import './Navbar.scss';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -17,17 +18,147 @@ const Navbar = () => {
 
     return (
 
-        <nav className={scroll ? "app__navbar app__navbar-scroll" : "app__navbar"}>
+        <nav className={scroll ? "app__navbar app__navbar-scroll" : "app__navbar app__navbar-scroll"}>
             <div className='app__navbar-logo'>
-                <img src={scroll ? images.logoDark : images.logoLight} alt="logo"/>
+                <img src={scroll ? images.logoDark : images.logoDark} alt="logo"/>
             </div>
             <ul className='app__navbar-links'>
-                {['home','Our Services','Pricing' ,'Membership','FAQ','Gallery','About Us','Contact','Book Now'].map((item)=> (
+
+
+
+
+
+            <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/"
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/services"
+          >
+            Our Services
+          </NavLink>
+        </li>
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/updates"
+          >
+            Membership
+          </NavLink>
+        </li>
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/purpose"
+          >
+            FAQ
+          </NavLink>
+        </li>
+
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/history"
+          >
+            Gallery
+          </NavLink>
+        </li>
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/about"
+          >
+            About Us
+          </NavLink>
+        </li>
+        
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/professional-development"
+          >
+            Contact
+          </NavLink>
+        </li>
+        <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/about"
+          >
+            Book Now
+          </NavLink>
+        </li>
+        {/* <li className="app__flex p-text">
+          <div />
+          <NavLink
+            className={
+              scroll
+                ? "navbar__links-styles-scroll navbar__links-color-scroll"
+                : "navbar__links-styles-scroll navbar__links-color-scroll"
+            }
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+        </li> */}
+
+
+
+
+
+
+                {/* {['home','Our Services','Pricing' ,'Membership','FAQ','Gallery','About Us','Contact','Book Now'].map((item)=> (
                     <li className='app__flex p-text' key={`link-${item}`}>
                         <div/>
-                        <a className={scroll ? 'navbar__links-color-scroll' : 'navbar__links-color'} href={`#${item}`}>{item}</a>
+                        <a className={scroll ? 'navbar__links-color-scroll' : 'navbar__links-color-scroll'} href={`#${item}`}>{item}</a>
                     </li>
-                ))}
+                ))} */}
             </ul>
 
             <div className='app__navbar-menu'>

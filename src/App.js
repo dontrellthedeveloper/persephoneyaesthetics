@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import { Footer } from './container';
 import Navbar from './components/Navbar/Navbar';
+import AboutUs from './pages/AboutUs';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Homepage/>} exact />
+          <Route path='/about' element={<AboutUs/>} exact />
         </Routes>
         <Footer/>
     </div>

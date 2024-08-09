@@ -62,7 +62,7 @@ const Stats = () => {
 
     return (
         <section id="stats">
-            <div className="content-box-md-stats" style={{borderBottom: '2px solid #dbc7ab'}}>
+            <div className="content-box-md-stats">
                 <div className="container">
                     {/* <div className="row">
                         <div className="col-md-12">

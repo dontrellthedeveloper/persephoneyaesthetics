@@ -49,6 +49,7 @@
       // width: 150px;
       width: 80px;
       width: 40px;
+      width: 32px;
       //width: 176px;
   
       @media screen and (min-width: 2000px) {
@@ -95,13 +96,15 @@
         //1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
   
         &:hover {
-          color:var(--secondary-color)
+          color:var(--secondary-color);
+          color: #dbc7ab;
         }
       }
   
       &:hover {
         div {
-          background-color: var(--secondary-color)
+          background-color: var(--secondary-color);
+          background-color: transparent;
         }
       }
     }

@@ -25,6 +25,12 @@ const About = () => {
             <div className="about-02" style={{backgroundColor: 'white'}}>
                 <div className="content-box-main-2">
                     <div className="container">
+
+                    <div style={{maxWidth: '700px', margin: '0 auto', textAlign: 'center'}}>
+                    <h1 className='styled-heading'>Book Our Services</h1>
+                    <hr className='styled-divider'/>
+                    </div>
+
                         <div className="row">
 
                         <OwlCarousel 

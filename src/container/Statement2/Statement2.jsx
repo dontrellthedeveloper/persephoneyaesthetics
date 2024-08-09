@@ -11,7 +11,7 @@ const Statement = () => {
 
 
         <section id="imageBackground">
-            <div className="content-box-sm">
+            <div className="content-box-sm" style={{padding: '40px 0'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
