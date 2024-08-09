@@ -9,6 +9,7 @@ import { Footer } from './container';
 import Navbar from './components/Navbar/Navbar';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
+import FAQ from './pages/FAQ';
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/' element={<Homepage/>} exact />
           <Route path='/about' element={<AboutUs/>} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/faq' element={<FAQ/>} />
         </Routes>
         <Footer/>
     </div>
