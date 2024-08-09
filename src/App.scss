@@ -249,7 +249,7 @@ section {
   color: #dcdcdc;
   border: 1px solid #dcdcdc;
 
-  color: #3e3a0c;
+  color: #fff;
   font-weight: 888;
   background-color: #40a278;
   border: 1px solid #3e3a0c;
@@ -267,9 +267,9 @@ section {
 }
 
 .btn-red {
-  color: #dcdcdc;
-  border: 1px solid #cd0000;
-  background-color: #cd0000;
+  color: #66471c;
+  border: 1px solid #9c6c29;
+  background-color: #dbc7ab;
 
 }
 
@@ -1472,7 +1472,7 @@ ul.social-list .twitter-bg-color a:hover {
 }
 
 .brand-bold {
-  color: #cd0000;
+  color: #9c6c29;
   font-weight: 700 !important;
 
 }
@@ -1487,7 +1487,8 @@ ul.social-list .twitter-bg-color a:hover {
 ================================================ */
 /* Contact Left */
 .form-styles-c {
-  background-color: #a1a0a1;
+  background-color: #f8f4f4;;
+  border: 2px solid #9c6c29;
 }
 
 .line-br-color {
@@ -1510,6 +1511,10 @@ ul.social-list .twitter-bg-color a:hover {
   margin-right: 10px;
 }
 
+.form-control {
+  border: 1px solid #000;
+}
+
 .office {
   margin-top: 230px;
   margin-bottom: 10px;
@@ -1521,7 +1526,7 @@ ul.social-list .twitter-bg-color a:hover {
 
 
 #contact {
-  background-color: #454545;
+  background-color: #fff;
 }
 
 #contact-left p {
@@ -1619,9 +1624,11 @@ ul.office-details li i {
 
 #contact-right form .form-control {
   font-family: "Open Sans", sans-serif;
-  padding: 10px 15px;
+  // padding: 10px 15px;
   font-size: 12px;
   line-height: 24px;
+  margin: 6px;
+  padding: 5px 15px;
 }
 
 #contact-right form textarea.form-control {
