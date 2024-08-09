@@ -116,7 +116,7 @@ const Navbar = () => {
                 ? "navbar__links-styles-scroll navbar__links-color-scroll"
                 : "navbar__links-styles-scroll navbar__links-color-scroll"
             }
-            to="/professional-development"
+            to="/contact"
           >
             Contact
           </NavLink>
