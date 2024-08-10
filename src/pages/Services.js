@@ -158,7 +158,7 @@ const Services = () => {
 
 
                                 <table id="customers">
-
+                                    <tbody>
                                     <tr>
                                         <th>Service</th>
                                         <th>Pricing</th>
@@ -244,7 +244,7 @@ const Services = () => {
                                         {/* <td>Germany</td> */}
                                     </tr>
                                     )}
-                                    
+                                    </tbody>
                                     
                                     </table>
 

@@ -796,6 +796,12 @@ background:
   background-color: #9c6c29;
   cursor: pointer;
   opacity: .55;
+  // color: #fff;
+
+  .styled-heading {
+    color: #dcdcdc;
+    -webkit-text-stroke: 1px #dcdcdc;
+  }
 }
 a
 .about-item:hover i,
@@ -803,6 +809,8 @@ a
 .about-item:hover h3,
 .about-item:hover p {
   color: #dcdcdc;
+
+
 }
 
 .about-item:hover hr {

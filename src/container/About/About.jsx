@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 import { client, urlFor } from '../../client';
 
 const About = () => {
-    const [services, setServices] = useState([]);
+    const [services, setServices] = useState(null);
 
     useEffect(() => {
         client.fetch(`*[_type == "services"]`
@@ -50,14 +50,16 @@ const About = () => {
                     </div>
 
                         <div className="row">
-
+                        <div className="col-md-12 col-sm-12"
+                                    //   key={service.name + index}
+                                    >
                         <OwlCarousel 
                             autoplay
                
                             
                             autoplayHoverPause='true'
                             autoplayTimeout='5000'
-                            id="clients-list" className="owl-carousel owl-theme"
+                            className="owl-theme"
                                 responsive={{
                                     0: {
                                         items: 1
@@ -83,7 +85,7 @@ const About = () => {
                             >
                             
                                 {services.map((service, index) => (
-                                    <div className="col-md-12 col-sm-12">
+
                             
                                         <Link 
                                         key={service.name + index}
@@ -92,7 +94,7 @@ const About = () => {
 
                                                             >
                                             <div className="portfolio-item">
-                                                <img src={urlFor(service.imageUrl).height(180).width(300).url()}className="influencer-image-2" alt=""/>
+                                                <img src={urlFor(service.imageUrl).height(180).width(300).url()} className="influencer-image-2" alt=""/>
                                                 <div className="portfolio-item-overlay margin-top-g">
 
                                                 </div>
@@ -108,14 +110,14 @@ const About = () => {
                                             </div>
                                         </Link>
                                     
-                                    </div>
+                                  
 
                                 ))}
                             
                            
                             
                         </OwlCarousel>
-
+                        </div>
                         </div>
                     </div>
                 </div>
