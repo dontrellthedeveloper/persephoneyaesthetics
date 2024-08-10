@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import services from "./services"
+
+export const schemaTypes = [services]

@@ -40,7 +40,24 @@ const About = () => {
                             
                             autoplayHoverPause='true'
                             autoplayTimeout='5000'
-                            className='owl-theme' 
+                            id="clients-list" className="owl-carousel owl-theme"
+                                responsive={{
+                                    0: {
+                                        items: 1
+                                    },
+                                    480: {
+                                        items: 2
+                                    },
+                                    768: {
+                                        items: 3
+                                    },
+                                    1000: {
+                                        items: 3
+                                    },
+                                    1200: {
+                                        items: 3
+                                    },
+                                }}
                             loop 
                             dots='true'
                        
@@ -61,7 +78,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaWeightScale className="react-icon-about"></FaWeightScale>
+                                    {/* <FaWeightScale className="react-icon-about"></FaWeightScale> */}
                                     <h3>Weight Loss</h3>
                                     <hr/>
                                     <p>Create a partnership with brands that provide increased profits and long lasting business relationships. Brands grow and Influencers share in the success of branding.</p>
@@ -79,7 +96,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegEye className="react-icon-about"></FaRegEye>
+                                    {/* <FaRegEye className="react-icon-about"></FaRegEye> */}
                                     <h3>Laser Hair Removal</h3>
                                     <hr/>
                                         <p>We believe that Influencers are the key to successful business growth.  We pair elite influencers with brands that they love so that the experience is organic. </p>
@@ -96,7 +113,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegHandshake className="react-icon-about"></FaRegHandshake>
+                                    {/* <FaRegHandshake className="react-icon-about"></FaRegHandshake> */}
                                     <h3>Botox</h3>
                                     <hr/>
                                         <p>Our passion is to make a difference and lead by example.  Brands can count on our team to deliver an organic product integration experience.</p>
@@ -113,7 +130,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaWeightScale className="react-icon-about"></FaWeightScale>
+                                    {/* <FaWeightScale className="react-icon-about"></FaWeightScale> */}
                                     <h3>Lip Filler</h3>
                                     <hr/>
                                     <p>Create a partnership with brands that provide increased profits and long lasting business relationships. Brands grow and Influencers share in the success of branding.</p>
@@ -130,7 +147,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegEye className="react-icon-about"></FaRegEye>
+                                    {/* <FaRegEye className="react-icon-about"></FaRegEye> */}
                                     <h3>Facial Filler</h3>
                                     <hr/>
                                         <p>We believe that Influencers are the key to successful business growth.  We pair elite influencers with brands that they love so that the experience is organic. </p>
@@ -147,7 +164,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegHandshake className="react-icon-about"></FaRegHandshake>
+                                    {/* <FaRegHandshake className="react-icon-about"></FaRegHandshake> */}
                                     <h3>Microneedling</h3>
                                     <hr/>
                                         <p>Our passion is to make a difference and lead by example.  Brands can count on our team to deliver an organic product integration experience.</p>
@@ -164,7 +181,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaWeightScale className="react-icon-about"></FaWeightScale>
+                                    {/* <FaWeightScale className="react-icon-about"></FaWeightScale> */}
                                     <h3>Hair Restoration</h3>
                                     <hr/>
                                     <p>Create a partnership with brands that provide increased profits and long lasting business relationships. Brands grow and Influencers share in the success of branding.</p>
@@ -181,7 +198,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegEye className="react-icon-about"></FaRegEye>
+                                    {/* <FaRegEye className="react-icon-about"></FaRegEye> */}
                                     <h3>Liquid Lipo</h3>
                                     <hr/>
                                         <p>We believe that Influencers are the key to successful business growth.  We pair elite influencers with brands that they love so that the experience is organic. </p>
@@ -198,7 +215,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegHandshake className="react-icon-about"></FaRegHandshake>
+                                    {/* <FaRegHandshake className="react-icon-about"></FaRegHandshake> */}
                                     <h3>Teeth Whitening</h3>
                                     <hr/>
                                         <p>Our passion is to make a difference and lead by example.  Brands can count on our team to deliver an organic product integration experience.</p>
@@ -215,7 +232,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaWeightScale className="react-icon-about"></FaWeightScale>
+                                    {/* <FaWeightScale className="react-icon-about"></FaWeightScale> */}
                                     <h3>Chemical Peel</h3>
                                     <hr/>
                                     <p>Create a partnership with brands that provide increased profits and long lasting business relationships. Brands grow and Influencers share in the success of branding.</p>
@@ -232,7 +249,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegEye className="react-icon-about"></FaRegEye>
+                                    {/* <FaRegEye className="react-icon-about"></FaRegEye> */}
                                     <h3>IV Therapy</h3>
                                     <hr/>
                                         <p>We believe that Influencers are the key to successful business growth.  We pair elite influencers with brands that they love so that the experience is organic. </p>
@@ -249,7 +266,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-item text-center about-h">
-                                    <FaRegHandshake className="react-icon-about"></FaRegHandshake>
+                                    {/* <FaRegHandshake className="react-icon-about"></FaRegHandshake> */}
                                     <h3>Facials</h3>
                                     <hr/>
                                         <p>Our passion is to make a difference and lead by example.  Brands can count on our team to deliver an organic product integration experience.</p>
