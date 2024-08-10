@@ -44,7 +44,7 @@ const FAQ = () => {
             <div className="map-color-3" >
                 <div className="row" style={{marginRight: '0'}}>
                     <div className="home-headings tools-p-align">
-                        <div className="horizontal-heading influencer-name">
+                        <div className="horizontal-heading influencer-name main-section-title">
                             <h1 className="home-headings-2 influencer-name-h1"><span className='influencer-name-span'> 
                             {/* {about.name} */}
                             FAQ
@@ -55,7 +55,7 @@ const FAQ = () => {
                 </div>
             </div>
 
-            <section id="about" style={{height: '900px', display: 'table', width: '100%'}}>
+            <section id="about" className='main-section-content'  style={{height: '900px', display: 'table', width: '100%'}}>
                 <div className="about-01 sectionBg1" style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: 'white'}}>
                     <div className="container">
                     <div className="row col-mobile-top" style={{justifyContent: 'center'}}>

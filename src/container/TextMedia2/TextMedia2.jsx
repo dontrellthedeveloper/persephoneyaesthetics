@@ -10,7 +10,7 @@ const Statement = () => {
 
 
 
-            <section id="about" style={{height: 'calc(100vh - 300px)', display: 'table', width: '100%'}}>
+            <section id="about" style={{minHeight: 'calc(100vh - 300px)', display: 'table', width: '100%'}}>
                 <div className="about-01 sectionBg1" style={{display: 'table-cell', verticalAlign: 'middle'}}>
                     <div className="container">
                     <div className="row col-mobile-top" style={{justifyContent: 'center'}}>

@@ -92,7 +92,7 @@ const Services = () => {
             <div className="map-color-3" >
                 <div className="row" style={{marginRight: '0'}}>
                     <div className="home-headings tools-p-align">
-                        <div className="horizontal-heading influencer-name">
+                        <div className="horizontal-heading influencer-name main-section-title">
                             <h1 className="home-headings-2 influencer-name-h1"><span className='influencer-name-span'> 
                             {/* {about.name} */}
                             {singleService.name}
@@ -103,10 +103,23 @@ const Services = () => {
                 </div>
             </div>
 
-            <section id="about" style={{height: 'calc(100vh - 300px)', display: 'table', width: '100%', paddingTop: '60px'}}>
+            <section id="about" className='main-section-content' style={{minHeight: 'calc(100vh - 300px)', display: 'table', width: '100%', paddingTop: '60px'}}>
                 <div className="about-01 sectionBg1" style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: 'white'}}>
                     <div className="container">
                     <div className="row col-mobile-top" style={{justifyContent: 'center'}}>
+                                                {/* Left Side */}
+                                                <div className="col-lg-6 col-md-6 col-sm-6">
+                                <div className="mobile__hide-image column-show map-color-7 influencer-image">
+                                    <div className="portfolio-item">
+                                        <img src={urlFor(singleService.imageUrl).url()} className="influencer-image-2" alt=""/>
+                                        <div className="portfolio-item-overlay margin-top-g">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                             {/* Right Side */}
                             <div className="col-md-6 col-sm-12 col-mobile" style={{display: 'table'}}>
                                 <div className="about-right" style={{display: 'table-cell', verticalAlign: 'middle'}}>
@@ -123,19 +136,7 @@ const Services = () => {
 
                                 </div>
                             </div>
-                            {/* Left Side */}
-                            <div className="col-lg-6 col-md-6 col-sm-6">
-                                <div className="mobile__hide-image column-show map-color-7 influencer-image">
-                                    <div className="portfolio-item">
-                                        <img src={urlFor(singleService.imageUrl).url()} className="influencer-image-2" alt=""/>
-                                        <div className="portfolio-item-overlay margin-top-g">
 
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
                             
 
                         </div>

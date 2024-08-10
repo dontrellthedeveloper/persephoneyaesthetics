@@ -20,7 +20,7 @@ const Statement = () => {
 
                     <div className=' app__header-logo'>
                         <NavLink to='/'>
-                            <img src={images.logo2} alt="logo"/>
+                            <img className='header__logo' src={images.logo2} alt="logo"/>
                         </NavLink>
                     </div>
                                 {/* <h1 className='styled-heading' style={{color: '#fff'}}>Persephoney Aesthetics</h1> */}

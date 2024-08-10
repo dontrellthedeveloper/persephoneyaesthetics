@@ -35,7 +35,7 @@ const About = () => {
         <>
 
 
-        <section id="imageBackground">
+        <section id="imageBackground" className='mobileServices'>
 
             
 

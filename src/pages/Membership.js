@@ -5,7 +5,7 @@
 import React, { useEffect, useState } from 'react';
 import {images} from "../constants";
 import { IoIosArrowDown } from 'react-icons/io';
-import { client, urlFor } from '../client';
+import { client } from '../client';
 
 import {
     Header,
@@ -36,6 +36,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { FaRegEye, FaRegHandshake } from 'react-icons/fa';
 import { FaWeightScale } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 
 const Membership = () => {
@@ -68,7 +69,7 @@ const Membership = () => {
             <div className="map-color-3" >
                 <div className="row" style={{marginRight: '0'}}>
                     <div className="home-headings tools-p-align">
-                        <div className="horizontal-heading influencer-name">
+                        <div className="horizontal-heading influencer-name main-section-title">
                             <h1 className="home-headings-2 influencer-name-h1"><span className='influencer-name-span'> 
                             {/* {about.name} */}
                             Membership
@@ -79,60 +80,95 @@ const Membership = () => {
                 </div>
             </div>
 
-            <section id="about" style={{height: 'calc(100vh - 300px)', display: 'table', width: '100%'}}>
-                <div className="about-01 sectionBg1" style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: 'white'}}>
-                    <div className="content-box-main-2">
-                        <div className="container">
+            <section id="imageBackground" className='mobileServices'>
 
-                        <div style={{maxWidth: '700px', margin: '0 auto', textAlign: 'center'}}>
-                        <h1 className='styled-heading' style={{fontSize: '32px'}}>Persephoney Aesthetics Membership Packages</h1>
-                        <hr className='styled-divider'/>
-                        </div>
+            
 
-                            <div className="row">
-                                <div className="col-md-12 col-sm-12">
-                                    <OwlCarousel 
-                                        autoplay
-                        
-                                        
-                                        autoplayHoverPause='true'
-                                        autoplayTimeout='5000'
-                                        className='owl-theme' 
-                                        loop 
-                                        dots='true'
-                                
-                                        margin={20}
-                                        nav
-                                        >
+{/* About 02 */}
+<div className="about-02" style={{backgroundColor: 'white'}}>
+    <div className="content-box-main-2">
+        <div className="container">
 
-                                        {membership.map((member, index) => (
+        <div style={{maxWidth: '700px', margin: '0 auto', textAlign: 'center'}}>
+        <h1 className='styled-heading'>Our Services</h1>
+        <hr className='styled-divider'/>
+        </div>
 
-                                            <div className="about-item text-center about-h" style={{border: '2px solid #dbc7ab'}}>
-                                                {/* <FaWeightScale className="react-icon-about"></FaWeightScale> */}
-                                                {/* <h3>Self-Care Package</h3> */}
-                                                <h1 className='styled-heading' style={{fontSize: '32px', marginBottom: '10px'}}>{member.name}</h1>
+            <div className="row">
+            <div className="col-md-12 col-sm-12"
+                        //   key={service.name + index}
+                        >
+            <OwlCarousel 
+                autoplay
+   
+                
+                autoplayHoverPause='true'
+                autoplayTimeout='5000'
+                className="owl-theme"
+                    responsive={{
+                        0: {
+                            items: 1
+                        },
+                        480: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 3
+                        },
+                        1200: {
+                            items: 3
+                        },
+                    }}
+                loop 
+                dots='true'
+           
+                margin={20}
+                nav
+                >
+                
+                    {membership.map((membership, index) => (
 
-                                                <hr/>
-                                                <h1 className='styled-heading' style={{fontSize: '26px', marginTop: '10px'}}>{member.price}</h1>
+                
+                            <Link 
+                            key={membership.name + index}
+                            // to={'/services/' + kid.slug.current}
+                            to={'/services/' + membership.slug.current}
 
-                                                <p>{member.description}</p>
-                                                <div className="home-btn">
-                                                    <a className="btn btn-general btn-home smooth-scroll" href="#" title="Get Represented" role="button">Join Now</a>
-                                                </div>
-                                            </div>
+                                                >
+                                <div className="portfolio-item">
 
-                                        ))}
+                                    <div className="portfolio-item-overlay margin-top-g">
 
-                                    </OwlCarousel>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <div className="about-item text-center about-h">
+                                    {/* <FaWeightScale className="react-icon-about"></FaWeightScale> */}
+                                    <h3>{membership.name}</h3>
+                                    <hr/>
+                                    <p>{membership.description}</p>
+                                    <div className="home-btn">
+                                        <a className="btn btn-general btn-home smooth-scroll" href="#portfolio" title="Get Represented" role="button">Join Now</a>
+                                    </div>
+                                </div>
+                            </Link>
+                        
+                      
 
+                    ))}
+                
+               
+                
+            </OwlCarousel>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
-
-            </section>
             
 
 
@@ -162,3 +198,23 @@ const Membership = () => {
 }
 
 export default Membership;
+
+
+
+
+// {membership.map((member, index) => (
+
+//     <div className="about-item text-center about-h" style={{border: '2px solid #dbc7ab'}}>
+
+//         <h1 className='styled-heading' style={{fontSize: '32px', marginBottom: '10px'}}>{member.name}</h1>
+
+//         <hr/>
+//         <h1 className='styled-heading' style={{fontSize: '26px', marginTop: '10px'}}>{member.price}</h1>
+
+//         <p>{member.description}</p>
+//         <div className="home-btn">
+//             <a className="btn btn-general btn-home smooth-scroll" href="#" title="Get Represented" role="button">Join Now</a>
+//         </div>
+//     </div>
+
+// ))}

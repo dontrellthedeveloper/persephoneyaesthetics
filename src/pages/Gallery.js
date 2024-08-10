@@ -46,7 +46,7 @@ const Gallery = () => {
             <div className="map-color-3" >
                 <div className="row" style={{marginRight: '0'}}>
                     <div className="home-headings tools-p-align">
-                        <div className="horizontal-heading influencer-name">
+                        <div className="horizontal-heading influencer-name main-section-title">
                             <h1 className="home-headings-2 influencer-name-h1"><span className='influencer-name-span'> 
                             {/* {about.name} */}
                             Gallery

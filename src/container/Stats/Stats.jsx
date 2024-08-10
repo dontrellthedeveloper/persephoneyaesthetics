@@ -61,7 +61,7 @@ const Stats = () => {
 
 
     return (
-        <section id="stats">
+        <section id="stats" className='mobileStats' style={{}}>
             <div className="content-box-md-stats">
                 <div className="container">
                     {/* <div className="row">

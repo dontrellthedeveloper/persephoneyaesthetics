@@ -57,7 +57,7 @@ const Contact = () => {
             <div className="map-color-3" >
                 <div className="row" style={{marginRight: '0'}}>
                     <div className="home-headings tools-p-align">
-                        <div className="horizontal-heading influencer-name">
+                        <div className="horizontal-heading influencer-name main-section-title">
                             <h1 className="home-headings-2 influencer-name-h1"><span className='influencer-name-span'> 
                             {/* {about.name} */}
                             Contact
@@ -68,7 +68,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <section id="about" style={{height: 'calc(100vh - 300px)', display: 'table', width: '100%'}}>
+            <section id="about" className='main-section-content' style={{height: 'calc(100vh - 300px)', display: 'table', width: '100%'}}>
                 <div className="about-01 sectionBg1" style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: 'white'}}>
                     <div className="container">
                     <div className="row col-mobile-top" style={{justifyContent: 'center'}}>
@@ -137,14 +137,14 @@ const Contact = () => {
                                         {/* )} */}
 
                                          {/* {social.googlePlus && ( */}
-                                            <a 
+                                            {/* <a 
                                               href=''
-                                            // href={social.googlePlus}
+                                 
                                             target='_blank'>
                                                 <button className='btn btn-social-i-y btn-google2'>
                                                     <FaGooglePlus/>
                                                 </button>
-                                            </a>
+                                            </a> */}
                                         {/* )}  */}
                                         </p>
                                     <hr className='styled-divider'/>

@@ -23,9 +23,13 @@ const Navbar = () => {
           : "app__navbar app__navbar-scroll"
       }
     >
+     
       <div className="app__navbar-logo">
+      <NavLink to="/">
         <img src={scroll ? images.logoDark : images.logoDark} alt="logo" />
+        </NavLink>
       </div>
+    
       <ul className="app__navbar-links">
         <li className="app__flex p-text">
           <div />
@@ -185,22 +189,105 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {[
-                "home",
-                "Our Services",
-                "Membership",
-                "FAQ",
-                "Gallery",
-                "About Us",
-                "Contact",
-                "Book Now",
-              ].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {/*{['home','about','work','skills','contact'].map((item)=> (*/}
+              {/*    <li key={item}>*/}
+              {/*        <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>*/}
+              {/*    </li>*/}
+              {/*))}*/}
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/"
+                  onClick={() => setToggle(false)}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/"
+                  onClick={() => setToggle(false)}
+                >
+                  Our Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/membership"
+                  onClick={() => setToggle(false)}
+                >
+                  Membership
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/faq"
+                  onClick={() => setToggle(false)}
+                >
+                  FAQ
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/gallery"
+                  onClick={() => setToggle(false)}
+                >
+                  Gallery
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/about"
+                  onClick={() => setToggle(false)}
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/contact"
+                  onClick={() => setToggle(false)}
+                >
+                  Contact
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/"
+                  onClick={() => setToggle(false)}
+                >
+                  Book Now
+                </NavLink>
+              </li>
+              {/* <li>
+                <NavLink
+                  className="app__navbar-menu-links"
+                  to="/contact"
+                  onClick={() => setToggle(false)}
+                >
+                  Contact
+                </NavLink>
+              </li> */}
+              {/*<li>*/}
+              {/*    <a href={`#`} onClick={() => setToggle(false)}>About</a>*/}
+              {/*</li>*/}
+              {/*<li>*/}
+              {/*    <a href={`#`} onClick={() => setToggle(false)}>Influencers</a>*/}
+              {/*</li>*/}
+              {/*<li>*/}
+              {/*    <a href={`#`} onClick={() => setToggle(false)}>KTM Kids</a>*/}
+              {/*</li>*/}
+              {/*<li>*/}
+              {/*    <a href={`#`} onClick={() => setToggle(false)}>Services</a>*/}
+              {/*</li>*/}
             </ul>
           </div>
         )}
